@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const routes: Routes = [
+  
   {path:'home',component:HomeComponent},
   {path:'contact', component:ContactMeComponent}
 ];
