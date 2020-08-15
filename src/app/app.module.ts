@@ -9,6 +9,7 @@ import { EducationComponent } from './education/education.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import {ContactMeService} from './contact-me/contact-me.service'
 import { HttpClientModule } from '@angular/common/http';
+import {EducationService} from './education/education.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ContactMeService],
+  providers: [ContactMeService,EducationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

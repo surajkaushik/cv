@@ -1,63 +1,30 @@
-<!-- <div class="card-deck" *ngFor="let p of list">
-    <div class="card bg-primary">
-        <div class="card-body text-center">
-            <h4 class="card-title">Name</h4>
-            <p class="card-text"><b>{{p.name}}</b></p>
-        </div>
-    </div>
-    <div class="card bg-danger">
-        <div class="card-body text-center">
-            <h4 class="card-title">Contact Number</h4>
-            <p class="card-text"><b>{{p.phoneNumber}}</b></p>
-        </div>
-    </div>
-    <div class="card bg-warning">
-        <div class="card-body text-center">
-            <h4 class="card-title">Email Id</h4>
-            <p class="card-text"><b>{{p.emailId}}</b></p>
-        </div>
-    </div>
-    <div class="card bg-success">
-        <div class="card-body text-center">
-            <h4 class="card-title">LinkedIn</h4>
-            <p class="card-text"><b><a href="{{p.linkedIn}}" style="color: black;">Click here to check my LinkedIn
-                        Profile</a></b></p>
-        </div>
-    </div>
-    <div class="card bg-primary">
-        <div class="card-body text-center">
-            <h4 class="card-title">Github</h4>
-            <p class="card-text"><b><a href="{{p.git}}" style="color: black;">Click here to check my Github</a></b></p>
-        </div>
-    </div>
-</div> -->
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <div class="text-left table-responsive">
             <table class="table table-hover" *ngFor="let p of list">
                 <tbody>
-                <tr>
-                    <th><img src="../../assets/user (2).png"></th>
-                    <td style="color: black;"><b>{{p.name}}</b></td>
-                </tr>
-                <tr>
-                    <th><img src="../../assets/phone.png"></th>
-                    <td style="color: black;"><b>{{p.phoneNumber}}</b></td>
-                </tr>
-                <tr>
-                    <th><img src="../../assets/email.png"></th>
-                    <td style="color: black;"><b>{{p.emailId}}</b></td>
-                </tr>
-                <tr>
-                    <th><img src="../../assets/linkedin.png"></th>
-                    <td><b><a href="{{p.linkedIn}}" target="_blank" style="color: black;">Click here</a></b></td>
-                </tr>
-                <tr>
-                    <th><img src="../../assets/github.png"></th>
-                    <td><b><a href="{{p.git}}" target="_blank" style="color: black;">Click here</a></b></td>
-                </tr>
-            </tbody>
-            <br>
+                    <tr>
+                        <th><img src="../../assets/user (2).png"></th>
+                        <td style="color: black;"><b>{{p.name}}</b></td>
+                    </tr>
+                    <tr>
+                        <th><img src="../../assets/phone.png"></th>
+                        <td style="color: black;"><b>{{p.phoneNumber}}</b></td>
+                    </tr>
+                    <tr>
+                        <th><img src="../../assets/email.png"></th>
+                        <td style="color: black;"><b>{{p.emailId}}</b></td>
+                    </tr>
+                    <tr>
+                        <th><img src="../../assets/linkedin.png"></th>
+                        <td><b><a href="{{p.linkedIn}}" target="_blank" style="color: black;">Click here</a></b></td>
+                    </tr>
+                    <tr>
+                        <th><img src="../../assets/github.png"></th>
+                        <td><b><a href="{{p.git}}" target="_blank" style="color: black;">Click here</a></b></td>
+                    </tr>
+                </tbody>
+                <br>
             </table>
         </div>
     </div>
@@ -65,5 +32,7 @@
 
 <div><br><br>
     <h4 class="text-center"><b>Schedule a 30 min meeting with me</b></h4>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/surajkaushik/30min?background_color=4d5055&text_color=f3fffd&primary_color=de7e29" style="min-width:320px;height:630px;"></div>
+    <div class="calendly-inline-widget"
+        data-url="https://calendly.com/surajkaushik/30min?background_color=4d5055&text_color=f3fffd&primary_color=de7e29"
+        style="min-width:320px;height:630px;"></div>
 </div>

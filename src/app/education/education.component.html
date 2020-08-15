@@ -1,1 +1,25 @@
-<p>education works!</p>
+<div>
+    <img src="../../assets/mortarboard (1).png" class="center">
+</div>
+<br>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th style="color: white;"><b>Year</b></th>
+                <th style="color: white;"><b>Name of School/College</b></th>
+                <th style="color: white;"><b>Degree</b></th>
+                <th style="color: white;"><b>Marks</b></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let e of edu">
+            <tr>
+                <td style="color: white;"><b>{{e.year}}</b></td>
+                <td style="color: white;"><b>{{e.nameOfIns}}</b></td>
+                <td style="color: white;"><b>{{e.degree}}</b></td>
+                <td style="color: white;"><b>{{e.marks}}</b></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
