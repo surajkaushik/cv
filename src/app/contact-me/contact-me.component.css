@@ -1,0 +1,14 @@
+div{
+    color: black;
+}
+/* table {
+    border-block-color: white;
+    border:solid 2px;
+}
+  td    {border:style 3px;} */
+  tr    {
+      background-color:inherit;
+      border-block-color: inherit;
+      color: black;
+     
+    }

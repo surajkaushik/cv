@@ -1,7 +1,7 @@
-<div class="card-deck" *ngFor="let p of list">
+<!-- <div class="card-deck" *ngFor="let p of list">
     <div class="card bg-primary">
         <div class="card-body text-center">
-            <h4 class="card-title"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Name</h4>
+            <h4 class="card-title">Name</h4>
             <p class="card-text"><b>{{p.name}}</b></p>
         </div>
     </div>
@@ -20,7 +20,8 @@
     <div class="card bg-success">
         <div class="card-body text-center">
             <h4 class="card-title">LinkedIn</h4>
-            <p class="card-text"><b><a href="{{p.linkedIn}}" style="color: black;">Click here to check my LinkedIn Profile</a></b></p>
+            <p class="card-text"><b><a href="{{p.linkedIn}}" style="color: black;">Click here to check my LinkedIn
+                        Profile</a></b></p>
         </div>
     </div>
     <div class="card bg-primary">
@@ -28,9 +29,42 @@
             <h4 class="card-title">Github</h4>
             <p class="card-text"><b><a href="{{p.git}}" style="color: black;">Click here to check my Github</a></b></p>
         </div>
-    </div> 
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="text-left table-responsive">
+            <table class="table table-hover" *ngFor="let p of list">
+                <tbody>
+                <tr>
+                    <th><b>Name:</b></th>
+                    <td style="color: black;"><b>{{p.name}}</b></td>
+                </tr>
+                <tr>
+                    <th><b>Contact Number:</b></th>
+                    <td style="color: black;"><b>{{p.phoneNumber}}</b></td>
+                </tr>
+                <tr>
+                    <th><b>Email:</b></th>
+                    <td style="color: black;"><b>{{p.emailId}}</b></td>
+                </tr>
+                <tr>
+                    <th><b>LinkedIn:</b></th>
+                    <td><b><a href="{{p.linkedIn}}" target="_blank" style="color: black;">Click here to check my LinkedIn
+                        Profile</a></b></td>
+                </tr>
+                <tr>
+                    <th><b>GitHub:</b></th>
+                    <td><b><a href="{{p.git}}" target="_blank" style="color: black;">Click here to check my Github</a></b></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
 </div>
+
 <div><br><br>
-    <h4 class="text-center">Schedule a 30 min meeting with me</h4>
-<div class="calendly-inline-widget" data-url="https://calendly.com/surajkaushik/30min?primary_color=e7880d" style="min-width:320px;height:630px;"></div>
+    <h4 class="text-center"><b>Schedule a 30 min meeting with me</b></h4>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/surajkaushik/30min?primary_color=e7880d"
+        style="min-width:320px;height:630px;"></div>
 </div>
