@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContactMeService} from './contact-me.service'
-import { Person } from '../shared/model/person';
+import { Person } from '../../model/person';
 
 @Component({
   selector: 'app-contact-me',
