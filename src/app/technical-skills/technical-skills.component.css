@@ -61,6 +61,6 @@ border-radius: 8px;
 .cont .card:hover .content{
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: -80px;
     transition-delay: 0.3s;
 }
