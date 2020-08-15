@@ -20,6 +20,7 @@ export class ContactMeComponent implements OnInit {
         this.list=reponse;
       }
     );
+    
   }
 
 }

@@ -1,32 +1,36 @@
 <div class="card-deck" *ngFor="let p of list">
     <div class="card bg-primary">
         <div class="card-body text-center">
-            <h4 class="card-title"><u>Name</u></h4>
+            <h4 class="card-title"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Name</h4>
             <p class="card-text"><b>{{p.name}}</b></p>
         </div>
     </div>
     <div class="card bg-danger">
         <div class="card-body text-center">
-            <h4 class="card-title"><u>Contact Number</u></h4>
+            <h4 class="card-title">Contact Number</h4>
             <p class="card-text"><b>{{p.phoneNumber}}</b></p>
         </div>
     </div>
     <div class="card bg-warning">
         <div class="card-body text-center">
-            <h4 class="card-title"><u>Email Id</u></h4>
+            <h4 class="card-title">Email Id</h4>
             <p class="card-text"><b>{{p.emailId}}</b></p>
         </div>
     </div>
     <div class="card bg-success">
         <div class="card-body text-center">
-            <h4 class="card-title"><u>LinkedIn</u></h4>
+            <h4 class="card-title">LinkedIn</h4>
             <p class="card-text"><b><a href="{{p.linkedIn}}" style="color: black;">Click here to check my LinkedIn Profile</a></b></p>
         </div>
     </div>
     <div class="card bg-primary">
         <div class="card-body text-center">
-            <h4 class="card-title"><u>Github</u></h4>
+            <h4 class="card-title">Github</h4>
             <p class="card-text"><b><a href="{{p.git}}" style="color: black;">Click here to check my Github</a></b></p>
         </div>
     </div> 
+</div>
+<div><br><br>
+    <h4 class="text-center">Schedule a 30 min meeting with me</h4>
+<div class="calendly-inline-widget" data-url="https://calendly.com/surajkaushik/30min?primary_color=e7880d" style="min-width:320px;height:630px;"></div>
 </div>
