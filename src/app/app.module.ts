@@ -10,6 +10,7 @@ import { TechnicalSkillsComponent } from './technical-skills/technical-skills.co
 import {ContactMeService} from './contact-me/contact-me.service'
 import { HttpClientModule } from '@angular/common/http';
 import {EducationService} from './education/education.service';
+import { AddEducationComponent } from './education/add-education/add-education.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {EducationService} from './education/education.service';
     HomeComponent,
     ContactMeComponent,
     EducationComponent,
-    TechnicalSkillsComponent
+    TechnicalSkillsComponent,
+    AddEducationComponent
   ],
   imports: [
     BrowserModule,
