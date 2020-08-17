@@ -15,8 +15,8 @@
         <tbody *ngFor="let e of edu">
             <tr>
                 <td><b>{{e.year}}</b></td>
-                <td><b>{{e.nameOfIns}}</b></td>
-                <td><b>{{e.degree}}</b></td>
+                <td><b>{{e.nameOfIns|uppercase}}</b></td>
+                <td><b>{{e.degree|uppercase}}</b></td>
                 <td><b>{{e.marks}}%</b></td>
             </tr>
 

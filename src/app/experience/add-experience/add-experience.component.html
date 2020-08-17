@@ -1,0 +1,46 @@
+<div class="col-md-4 offset-md-4">
+    <form class="form" [formGroup]="expForm" (ngSubmit)="addExperience()">
+
+        <div class="form-group">
+            <label for="experienceId">Serial Number:</label>
+            <input type="text" class="form-control" id="experienceId" formControlName="experienceId" placeholder="ENTER SERIAL NUMBER ACCORDINGLY">
+            <span class="text-danger" *ngIf="expForm.controls.experienceId.invalid && expForm.controls.experienceId.dirty">
+                Please Enter Serial Number
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" class="form-control" id="year" formControlName="year" placeholder="ENTER YEAR FOR EXPERIENCE">
+            <span class="text-danger" *ngIf="expForm.controls.year.invalid && expForm.controls.year.dirty">
+                Please Enter YearFor Experience
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Company Name:</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="ENTER COMPANY NAME">
+            <span class="text-danger" *ngIf="expForm.controls.name.invalid && expForm.controls.name.dirty">
+                Please Enter Company Name
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="field">Feild Of Work:</label>
+            <input type="text" class="form-control" id="field" formControlName="field" placeholder="ENTER FEILD OF WORK">
+            <span class="text-danger" *ngIf="expForm.controls.field.invalid && expForm.controls.field.dirty">
+                Please Enter Feild Of Work
+            </span>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" [disabled]="expForm.invalid">Submit</button> &nbsp;
+            <button class="btn btn-primary" type="reset" [disabled]="expForm.invalid">Reset</button> &nbsp;
+            <button class="btn btn-primary" type="button" routerLink='/exp'>Back</button> &nbsp;
+        </div>
+    </form>
+
+    <div *ngIf="successMessage">
+        <span style="color: wheat;">{{successMessage}}</span>
+    </div>
+</div>

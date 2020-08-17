@@ -10,6 +10,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component';
 import { AddCertificateComponent } from './certification/add-certificate/add-certificate.component';
+import { AddExperienceComponent } from './experience/add-experience/add-experience.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/home',pathMatch:'full'},
@@ -22,7 +23,9 @@ const routes: Routes = [
   {path:'exp',component:ExperienceComponent},
   {path:'feedback',component:FeedbackComponent},
   {path:'feedback/viewFeedBack',component:ViewFeedbackComponent},
-  {path:'certification/addCertificate',component:AddCertificateComponent}
+  {path:'certification/addCertificate',component:AddCertificateComponent},
+  {path:'exp/addExp',component:AddExperienceComponent},
+  {path:'**',component:HomeComponent},
 ];
 
 @NgModule({

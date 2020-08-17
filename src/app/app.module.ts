@@ -18,7 +18,8 @@ import { ExperienceService } from './experience/experience.service';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackService } from './feedback/feedback.service';
 import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component';
-import { AddCertificateComponent } from './certification/add-certificate/add-certificate.component'
+import { AddCertificateComponent } from './certification/add-certificate/add-certificate.component';
+import { AddExperienceComponent } from './experience/add-experience/add-experience.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { AddCertificateComponent } from './certification/add-certificate/add-cer
     ExperienceComponent,
     FeedbackComponent,
     ViewFeedbackComponent,
-    AddCertificateComponent
+    AddCertificateComponent,
+    AddExperienceComponent
   ],
   imports: [
     BrowserModule,

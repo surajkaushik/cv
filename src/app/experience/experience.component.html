@@ -1,1 +1,28 @@
-<p>experience works!</p>
+<div>
+    <img src="../../assets/goal.png" class="center">
+</div><br>
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="table-responsive">
+            <table class="table table-bordered table-responsive table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th><b>Experience Name</b></th>
+                        <th><b>Experience Type</b></th>
+                        <th><b>Experience Year</b></th>
+
+                    </tr>
+                </thead>
+                <tbody *ngFor="let c of exp">
+                    <tr>
+                        <td><b>{{c.name|uppercase}}</b></td>
+                        <td><b>{{c.field|uppercase}}</b></td>
+                        <td><b>{{c.year|uppercase}}</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" type="button" [routerLink]="['/exp/addExp']">Add
+                Experience</button>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience } from 'src/model/experience';
+import { ExperienceService } from './experience.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
+  exp:Experience[];
+  
+  constructor(private experienceService:ExperienceService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.exp=null;
+    this.experienceService.getExperience().subscribe(
+      (response)=>{
+        this.exp=response;
+      }
+    );
   }
+  
 
 }
