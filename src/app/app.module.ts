@@ -17,7 +17,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperienceService } from './experience/experience.service';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackService } from './feedback/feedback.service';
-import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component'
+import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component';
+import { AddCertificateComponent } from './certification/add-certificate/add-certificate.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.co
     CertificationComponent,
     ExperienceComponent,
     FeedbackComponent,
-    ViewFeedbackComponent
+    ViewFeedbackComponent,
+    AddCertificateComponent
   ],
   imports: [
     BrowserModule,
