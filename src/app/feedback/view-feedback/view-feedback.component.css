@@ -19,7 +19,7 @@ padding: 30px;
     position: relative;
     max-width: 300px;
     height: 215px;
-    background:#16384c;
+    background:black;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
@@ -29,7 +29,7 @@ padding: 30px;
 }
 
 .cont .card:hover{
-    height: 380px;
+    height: 300px;
 
 }
 
@@ -52,7 +52,7 @@ border-radius: 8px;
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color:white;
+    color:wheat;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;

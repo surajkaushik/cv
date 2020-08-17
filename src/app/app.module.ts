@@ -16,7 +16,8 @@ import { CertificationService } from './certification/certification.service';
 import { ExperienceComponent } from './experience/experience.component';
 import { ExperienceService } from './experience/experience.service';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { FeedbackService } from './feedback/feedback.service'
+import { FeedbackService } from './feedback/feedback.service';
+import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { FeedbackService } from './feedback/feedback.service'
     AddEducationComponent,
     CertificationComponent,
     ExperienceComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ViewFeedbackComponent
   ],
   imports: [
     BrowserModule,

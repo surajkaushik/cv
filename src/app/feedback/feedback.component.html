@@ -1,1 +1,39 @@
-<p>feedback works!</p>
+<div class="col-md-4 offset-md-4">
+    <form class="form" [formGroup]="feedbackform" (ngSubmit)="addFeedback()">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="ENTER YOUR NAME">
+            <span class="text-danger" *ngIf="feedbackform.controls.name.invalid && feedbackform.controls.name.dirty">
+                Please Enter Valid Name
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="emailId">Email Id:</label>
+            <input type="email" class="form-control" id="emailId" placeholder="ENTER YOUR EMAIL ID"
+                formControlName="emailId">
+            <span class="text-danger"
+                *ngIf="feedbackform.controls.emailId.invalid && feedbackform.controls.emailId.dirty">
+                Please Enter Valid Email Id
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" class="form-control" rows="3" formControlName="comments" placeholder="ENTER YOUR COMMENTS"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" [disabled]="feedbackform.invalid">Submit</button> &nbsp;
+            <button class="btn btn-primary" type="reset" [disabled]="feedbackform.invalid">Reset</button> &nbsp;
+        </div>
+    </form>
+
+    <div *ngIf="successMessage">
+        <span class="text-danger center">{{successMessage}}</span>
+    </div>
+
+</div>
+<button class="btn btn-primary center" [routerLink]="['/feedback/viewFeedBack']">View FeedBack</button>

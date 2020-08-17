@@ -2,37 +2,37 @@
     <form class="form" [formGroup]="addEduForm" (ngSubmit)="addEducation()">
         <div class="form-group">
             <label for="educationId">Roll No:</label>
-            <input type="text" class="form-control" id="educationId" formControlName="educationId">
+            <input type="text" class="form-control" id="educationId" formControlName="educationId" placeholder="ENTER YOUR ROLL No.">
             <span class="text-danger" *ngIf="addEduForm.controls.educationId.invalid && addEduForm.controls.educationId.dirty">
-                Pleasse Enter Roll No.
+                Please Enter Roll No.
             </span>
         </div>
         <div class="form-group">
             <label for="year">Year:</label>
-            <input type="text" class="form-control" id="year" formControlName="year">
+            <input type="text" class="form-control" id="year" formControlName="year" placeholder="ENTER THE YEAR OF PASSING">
             <span class="text-danger" *ngIf="addEduForm.controls.year.invalid && addEduForm.controls.year.dirty">
-                Pleasse Enter year of qualification
+                Please Enter year of qualification
             </span>
         </div>
         <div class="form-group">
             <label for="nameOfIns">Name of Institute:</label>
-            <input type="text" class="form-control" id="nameOfIns" formControlName="nameOfIns">
+            <input type="text" class="form-control" id="nameOfIns" formControlName="nameOfIns" placeholder="ENTER THE NAME OF INSTITUTE">
             <span class="text text-danger" *ngIf="addEduForm.controls.nameOfIns.invalid && addEduForm.controls.nameOfIns.dirty">
-                Pleasse Enter the Name of Institute.
+                Please Enter the Name of Institute.
             </span>
         </div>
         <div class="form-group">
             <label for="degree">Degree:</label>
-            <input type="text" class="form-control" id="degree" formControlName="degree">
+            <input type="text" class="form-control" id="degree" formControlName="degree" placeholder="ENTER YOUR DEGREE">
             <span class="text-danger" *ngIf="addEduForm.controls.degree.invalid && addEduForm.controls.degree.dirty"> 
-                Pleasse Enter Degree.
+                Please Enter Degree.
             </span>
         </div>
         <div class="form-group">
             <label for="marks">Marks:</label>
-            <input type="text" class="form-control" id="marks" formControlName="marks">
+            <input type="text" class="form-control" id="marks" formControlName="marks" placeholder="ENTER YOUR MARKS IN PERCENTAGE WITHOUT SYMBOL">
             <span class="text-danger" *ngIf="addEduForm.controls.marks.invalid && addEduForm.controls.marks.dirty">
-                Pleasse Enter your marks.
+                Please Enter your marks.
             </span>
         </div>
         <div class="form-group">
@@ -45,6 +45,6 @@
         </div>
     </form>
     <div *ngIf="successMessage"> 
-        <span class="text">{{successMessage}}</span>
+        <span style="color: wheat;">{{successMessage}}</span>
     </div>
 </div>
