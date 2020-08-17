@@ -1,1 +1,31 @@
-<p>add-education works!</p>
+<div class="col-md-5 offset-md-4">
+    <form class="form" [formGroup]="addEduForm" (ngSubmit)="addEducation()">
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" class="form-control" id="year" formControlName="year">
+        </div>
+        <div class="form-group">
+            <label for="nameOfIns">Name of Institute:</label>
+            <input type="text" class="form-control" id="nameOfIns" formControlName="nameOfIns">
+        </div>
+        <div class="form-group">
+            <label for="degree">Degree:</label>
+            <input type="text" class="form-control" id="degree" formControlName="degree">
+        </div>
+        <div class="form-group">
+            <label for="marks">Marks:</label>
+            <input type="text" class="form-control" id="marks" formControlName="marks">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type ="submit" [disabled]="addEduForm.invalid">
+                Submit
+            </button> &nbsp;
+            <button class="btn btn-primary" type="reset" [disabled]="addEduForm.invalid">
+                Reset
+            </button>
+        </div>
+    </form>
+    <div *ngIf="successMessage"> 
+        <span class="text-success">{{successMessage}}</span>
+    </div>
+</div>
