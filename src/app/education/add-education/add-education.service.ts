@@ -11,6 +11,6 @@ export class AddEducationService {
   constructor(private http:HttpClient) { }
 
   addEducation(education:Education):Observable<string>{
-    return this.http.post<string>("http://localhost:3333/EducationAPI/addEducation",education);
+    return this.http.post("http://localhost:3333/EducationAPI/addEducation",education,{responseType:"text"});
   }
 }
