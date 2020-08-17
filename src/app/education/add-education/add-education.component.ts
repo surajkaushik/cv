@@ -18,6 +18,7 @@ export class AddEducationComponent implements OnInit {
 
   ngOnInit() {
     this.addEduForm = this.fb.group({
+      educationId:['',Validators.required],
       year: ['',Validators.required],
       nameOfIns: ['',Validators.required],
       degree: ['',Validators.required],
@@ -28,9 +29,13 @@ export class AddEducationComponent implements OnInit {
   addEducation(){
     this.successMessage=null;
     this.errorMessage=null;
-    this.addEducationService.addEducation(this.addEduForm.value).subscribe(
+    let edu=new Education();
+    edu=this.addEduForm.value;
+    console.log(edu)
+    this.addEducationService.addEducation(edu).subscribe(
       (success)=>{
         this.successMessage=success;
+        console.log(success)
       },
       (error)=>{
         this.errorMessage="Already Available";

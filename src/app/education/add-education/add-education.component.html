@@ -1,6 +1,10 @@
 <div class="col-md-5 offset-md-4">
     <form class="form" [formGroup]="addEduForm" (ngSubmit)="addEducation()">
         <div class="form-group">
+            <label for="educationId">Roll No:</label>
+            <input type="text" class="form-control" id="educationId" formControlName="educationId">
+        </div>
+        <div class="form-group">
             <label for="year">Year:</label>
             <input type="text" class="form-control" id="year" formControlName="year">
         </div>

@@ -4,4 +4,5 @@ export class Education{
 	nameOfIns:string;
 	degree:string;
 	marks:string;
+	successMessage:string;
 }
