@@ -5,6 +5,9 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { EducationComponent } from './education/education.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { AddEducationComponent } from './education/add-education/add-education.component';
+import { CertificationComponent } from './certification/certification.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/home',pathMatch:'full'},
@@ -12,7 +15,10 @@ const routes: Routes = [
   {path:'contact', component:ContactMeComponent},
   {path:'education', component:EducationComponent},
   {path:'tskill', component:TechnicalSkillsComponent},
-  {path:'addEdu',component:AddEducationComponent}
+  {path:'addEdu',component:AddEducationComponent},
+  {path:'certification',component:CertificationComponent},
+  {path:'exp',component:ExperienceComponent},
+  {path:'feedback',component:FeedbackComponent}
 ];
 
 @NgModule({

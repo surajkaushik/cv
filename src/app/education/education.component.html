@@ -6,18 +6,18 @@
     <table class="table table-bordered table-hover table-striped">
         <thead>
             <tr>
-                <th style="color: white;"><b>Year</b></th>
-                <th style="color: white;"><b>Name of School/College</b></th>
-                <th style="color: white;"><b>Degree</b></th>
-                <th style="color: white;"><b>Marks</b></th>
+                <th><b>Year</b></th>
+                <th><b>Name of School/College</b></th>
+                <th><b>Degree</b></th>
+                <th><b>Marks</b></th>
             </tr>
         </thead>
         <tbody *ngFor="let e of edu">
             <tr>
-                <td style="color: white;"><b>{{e.year}}</b></td>
-                <td style="color: white;"><b>{{e.nameOfIns}}</b></td>
-                <td style="color: white;"><b>{{e.degree}}</b></td>
-                <td style="color: white;"><b>{{e.marks}}%</b></td>
+                <td><b>{{e.year}}</b></td>
+                <td><b>{{e.nameOfIns}}</b></td>
+                <td><b>{{e.degree}}</b></td>
+                <td><b>{{e.marks}}%</b></td>
             </tr>
 
         </tbody>
@@ -26,12 +26,4 @@
 
 <div>
     <button class="btn btn-primary" type="submit" [routerLink]="['/addEdu']">Add Education</button>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4 offset-md-6">
-            <router-outlet></router-outlet>
-        </div>
-    </div>
 </div>

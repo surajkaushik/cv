@@ -3,3 +3,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  th {
+    /* background-color: #006DCC; */
+    color: white;
+} 
+td {
+  /* background-color: white; */
+  color: white;
+} 
