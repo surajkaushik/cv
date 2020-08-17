@@ -1,1 +1,39 @@
-<p>add-certificate works!</p>
+<div class="col-md-4 offset-md-4">
+    <form class="form" [formGroup]="certificateForm" (ngSubmit)="addCertificate()">
+
+        <div class="form-group">
+            <label for="certificateId">Certificate Number:</label>
+            <input type="text" class="form-control" id="certificateId" formControlName="certificateId" placeholder="ENTER YOUR CERTIFICATE NUMBER">
+            <span class="text-danger" *ngIf="certificateForm.controls.certificateId.invalid && certificateForm.controls.certificateId.dirty">
+                Please Enter Valid Certificate Number
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="certificateName">Certificate Name:</label>
+            <input type="text" class="form-control" id="certificateName" formControlName="certificateName" placeholder="ENTER YOUR CERTIFICATE NAME">
+            <span class="text-danger" *ngIf="certificateForm.controls.certificateName.invalid && certificateForm.controls.certificateName.dirty">
+                Please Enter Valid Certificate Number
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="certificateURL">Certificate URL:</label>
+            <input type="text" class="form-control" id="certificateURL" formControlName="certificateURL" placeholder="ENTER YOUR CERTIFICATE URL">
+            <span class="text-danger" *ngIf="certificateForm.controls.certificateURL.invalid && certificateForm.controls.certificateURL.dirty">
+                Please Enter Valid Certificate Number
+            </span>
+        </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" [disabled]="certificateForm.invalid">Submit</button> &nbsp;
+            <button class="btn btn-primary" type="reset" [disabled]="certificateForm.invalid">Reset</button> &nbsp;
+            <button class="btn btn-primary" type="button" routerLink='/certification'>Back</button> &nbsp;
+        </div>
+    </form>
+
+    <div *ngIf="successMessage">
+        <span style="color: wheat;">{{successMessage}}</span>
+    </div>
+</div>

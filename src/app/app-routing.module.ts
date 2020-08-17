@@ -9,6 +9,7 @@ import { CertificationComponent } from './certification/certification.component'
 import { ExperienceComponent } from './experience/experience.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ViewFeedbackComponent } from './feedback/view-feedback/view-feedback.component';
+import { AddCertificateComponent } from './certification/add-certificate/add-certificate.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/home',pathMatch:'full'},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path:'certification',component:CertificationComponent},
   {path:'exp',component:ExperienceComponent},
   {path:'feedback',component:FeedbackComponent},
-  {path:'feedback/viewFeedBack',component:ViewFeedbackComponent}
+  {path:'feedback/viewFeedBack',component:ViewFeedbackComponent},
+  {path:'certification/addCertificate',component:AddCertificateComponent}
 ];
 
 @NgModule({

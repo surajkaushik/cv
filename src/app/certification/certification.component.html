@@ -1,1 +1,29 @@
-<p>certification works!</p>
+<div>
+    <img src="../../assets/patent.png" class="center">
+</div><br>
+<div class="row">
+    <div class="col-md-10 offset-md-2">
+        <div class="table-responsive">
+            <table class="table table-bordered table-responsive table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th><b>Certificate Name</b></th>
+                        <th><b>Certification Id</b></th>
+                        <th><b>To View Certificate</b></th>
+
+                    </tr>
+                </thead>
+                <tbody *ngFor="let c of certificate">
+                    <tr>
+                        <td><b>{{c.certificateName}}</b></td>
+                        <td><b>{{c.certificateId}}</b></td>
+                        <td><a href="{{c.certificateURL}}" target="_blank" style="color: white;"><b>Click here</b></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" type="submit" [routerLink]="['/certification/addCertificate']">Add
+                Certificate</button>
+        </div>
+    </div>
+</div>
